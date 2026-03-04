@@ -1,0 +1,55 @@
+package FontesAppCalculadora;
+
+import java.util.Scanner;
+
+public class CalculadoraAritmetica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int valor1, valor2;
+		int opcao = 0;
+		
+		System.out.println("Valor1: ");
+		valor1 = sc.nextInt();
+		
+		System.out.println("Valor2: ");
+		valor2 = sc.nextInt();
+		
+		if (opcao == 1) {
+			System.out.println(somar(valor1, valor2)); 
+		}else if (opcao == 2) {
+			System.out.println(subtrair(valor1, valor2));
+		}else if (opcao == 3) {
+			System.out.println(multiplicar(valor1, valor2));
+		}
+		else {
+			System.out.println(dividir(valor1, valor2));
+		}
+		
+	}
+	
+	private int resultadoConta = 0;
+	
+	public static int somar(int valor1, int valor2) {
+		int resultadoConta = valor1 + valor2;
+		return resultadoConta;
+	}
+	
+	public static int subtrair(int valor1, int valor2) {
+		int resultadoConta = valor1 - valor2;
+		return resultadoConta;
+	}
+	
+	public static int multiplicar(int valor1, int valor2) {
+		int resultadoConta = valor1 * valor2;
+		return resultadoConta;
+	}
+	
+	public static int dividir(int valor1, int valor2) {
+		int resultadoConta = valor1 / valor2;
+		return resultadoConta;
+	}
+	
+
+}
