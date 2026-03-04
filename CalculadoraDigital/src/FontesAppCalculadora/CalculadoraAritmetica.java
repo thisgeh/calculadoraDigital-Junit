@@ -7,8 +7,8 @@ public class CalculadoraAritmetica {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int valor1, valor2;
-		int opcao = 0;
+		double valor1, valor2;
+		double opcao = 0;
 		
 		System.out.println("Valor1: ");
 		valor1 = sc.nextInt();
@@ -33,23 +33,23 @@ public class CalculadoraAritmetica {
 	
 	private int resultadoConta = 0;
 	
-	public static int somar(int valor1, int valor2) {
-		int resultadoConta = valor1 + valor2;
+	public static double somar(double valor1, double valor2) {
+		double resultadoConta = valor1 + valor2;
 		return resultadoConta;
 	}
 	
-	public static int subtrair(int valor1, int valor2) {
-		int resultadoConta = valor1 - valor2;
+	public static double subtrair(double valor1, double valor2) {
+		double resultadoConta = valor1 - valor2;
 		return resultadoConta;
 	}
 	
-	public static int multiplicar(int valor1, int valor2) {
-		int resultadoConta = valor1 * valor2;
+	public static double multiplicar(double valor1, double valor2) {
+		double resultadoConta = valor1 * valor2;
 		return resultadoConta;
 	}
 	
-	public static int dividir(int valor1, int valor2) {
-		int resultadoConta = valor1 / valor2;
+	public static double dividir(double valor1, double valor2) {
+		double resultadoConta = valor1 / valor2;
 		return resultadoConta;
 	}
 	
